@@ -1,0 +1,17 @@
+a,a,Mexico,1 
+b,b,Mexico,2 
+c,c,Canada,3 
+j,r,Mexico,1 
+
+j,r,Mexico,4 
+
+j,r,Mexico,4 
+
+j,r,Mexico,4 
+
+j,r,Mexico,4 
+
+j,r,Mexico,4 
+
+q,q,Mexico,1 
+

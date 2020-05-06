@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body onload="llenaEdades()">
+        <h1>Formulario con persistencia</h1>
+        <form action="guardarNuevo.do" method="POST">
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Ingrese el nombre"  accesskey="1"/><br/>
+            <label>Apellidos</label>
+            <input type="text" name="apellidos" placeholder="Ingrese sus apellidos"  accesskey="2"/><br/>
+            <label>Edad</label>
+            <select name="edad" id="edad"></select><br/>
+            <label>Pais</label>
+            <select name="pais">
+                <option>Mexico</option>
+                <option>EU</option>
+                <option>Canada</option>
+                <option>Brasil</option>
+            </select><br/>
+            <input type="submit" value="Guardar"/>
+            
+        </form>
+        <script>
+            function llenaEdades(){
+                
+                let selectEdad = document.getElementById("edad");
+                
+                for(let i=1;i<99;i++){
+                    var option = document.createElement("option");
+                        option.text = i;
+                        option.value = i;
+                    selectEdad.appendChild(option);
+                }
+            }            
+        </script>
+    </body>
+</html>
